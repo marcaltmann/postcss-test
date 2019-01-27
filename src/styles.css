@@ -4,4 +4,6 @@
 
 .test {
   background: red;
+  transition: transform 1s;
+  display: flex;
 }
