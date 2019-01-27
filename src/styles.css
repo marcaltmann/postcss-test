@@ -2,8 +2,25 @@
  * Styles
  */
 
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-media --viewport-medium (width <= 50rem);
+
+:root {
+  --superColor: red;
+}
+
 .test {
-  background: red;
+  background: var(--superColor);
   transition: transform 1s;
   display: flex;
+}
+
+@media(--viewport-medium) {
+  .test {
+    font-size: 0.75rem;
+  }
+}
+
+:--heading {
+  font-style: italic;
 }
